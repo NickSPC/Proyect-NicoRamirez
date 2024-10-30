@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Proyecto de Ingeniería</title>
+    <link rel="stylesheet" href="Tabla4.css">
+    <script src="Tabla4.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Proyectos de Ingeniería</h1>
+    </div>
+
+    <div class="filter"></div>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar por nombre de proyecto..." onkeyup="filterTable()">
+        <button class="search-button">Buscar</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Proyecto</th>
+                <th>Descripción</th>
+                <th>Cliente</th>
+                <th>Fecha de Inicio</th>
+                <th>Fecha de Fin</th>
+                <th>Estado</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Puente de Acero</td>
+                <td>Diseño y construcción de puente peatonal sobre río X</td>
+                <td>Municipio de CABA</td>
+                <td>10 Ene 2024</td>
+                <td>30 Jul 2024</td>
+                <td>En Proceso</td>
+                <td><a href="#" class="button small-button">Ver Detalles</a></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Planta de Tratamiento</td>
+                <td>Implementación de sistema de tratamiento de aguas residuales</td>
+                <td>Comunidad de Mendoza</td>
+                <td>15 Feb 2024</td>
+                <td>20 Dic 2024</td>
+                <td>Planificado</td>
+                <td><a href="#" class="button small-button">Ver Detalles</a></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Edificio Residencial</td>
+                <td>Construcción de complejo de apartamentos sostenibles</td>
+                <td>Empresa Constructora XYZ</td>
+                <td>5 Mar 2024</td>
+                <td>15 Nov 2025</td>
+                <td>En Proceso</td>
+                <td><a href="#" class="button small-button">Ver Detalles</a></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Carretera Interurbana</td>
+                <td>Ampliación y mejora de carretera nacional</td>
+                <td>Ministerio de Transporte</td>
+                <td>20 Abr 2024</td>
+                <td>30 Sep 2025</td>
+                <td>Planificado</td>
+                <td><a href="#" class="button small-button">Ver Detalles</a></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Central Eléctrica Solar</td>
+                <td>Instalación de planta solar fotovoltaica</td>
+                <td>Empresa Energética ABC</td>
+                <td>1 Jun 2024</td>
+                <td>15 Mar 2025</td>
+                <td>En Proceso</td>
+                <td><a href="#" class="button small-button">Ver Detalles</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Acerca de Nosotros</h2>
+                <p class="about-text">Somos una empresa dedicada a desarrollar proyectos de ingeniería innovadores y sostenibles. Nuestro
+                    equipo está comprometido con la excelencia y la satisfacción del cliente en cada proyecto que
+                    llevamos a cabo.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Enlaces Rápidos</h2>
+                <ul class="quick-links">
+                    <li><a href="#">Inicio |</a></li>
+                    <li><a href="#">-Proyectos Actuales |</a></li>
+                    <li><a href="#">-Servicios de Ingeniería |</a></li>
+                    <li><a href="#">-Soporte Técnico |</a></li>
+                    <li><a href="#">-Contáctanos</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h2>Redes Sociales</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="img/facebook-logo-facebook-icon-transparent-free-png.webp"alt="Facebook"></a>
+                    <a href="#"><img src="img/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.webp"alt="Twitter"></a>
+                    <a href="#"><img src="img/07f0d7b69ef071571e4ada2f4d6a053a-icono-de-instagram-colorido.webp"alt="Instagram"></a>
+                    <a href="#"><img src="img/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp"alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Proyectos de Ingeniería | Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

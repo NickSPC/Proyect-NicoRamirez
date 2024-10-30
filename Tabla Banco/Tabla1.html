@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seleccionar Cuenta Bancaria</title>
+    <link rel="stylesheet" href="Tabla1.css">
+    <script src="Tabla1.js"></script>
+</head>
+
+<body>
+    
+    <div class="header">
+        <h1>Cuentas Bancarias</h1>
+    </div>
+
+    <div class="filter"></div>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Buscar por nombre o apellido..." onkeyup="filterTable()">
+        <button class="search-button">Buscar</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>DNI</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Saldo</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Luis</td>
+                <td>García</td>
+                <td>38883751</td>
+                <td>18 Nov 1992</td>
+                <td>$950,000</td>
+                <td>
+                    <a href="#" class="button small-button" onclick="showDetails(0)">Detalles</a>
+                    <a href="#" class="button small-button" onclick="showEdit(0)">Modificar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Maria</td>
+                <td>Rodríguez</td>
+                <td>30844639</td>
+                <td>18 Dec 1982</td>
+                <td>$890,900</td>
+                <td>
+                    <a href="#" class="button small-button" onclick="showDetails(1)">Detalles</a>
+                    <a href="#" class="button small-button" onclick="showEdit(1)">Modificar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Carlos</td>
+                <td>Pérez</td>
+                <td>27346353</td>
+                <td>18 Nov 1972</td>
+                <td>$1,420,000</td>
+                <td>
+                    <a href="#" class="button small-button" onclick="showDetails(2)">Detalles</a>
+                    <a href="#" class="button small-button" onclick="showEdit(2)">Modificar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ana</td>
+                <td>Sánchez</td>
+                <td>30309592</td>
+                <td>18 Mar 1982</td>
+                <td>$660,800</td>
+                <td>
+                    <a href="#" class="button small-button" onclick="showDetails(3)">Detalles</a>
+                    <a href="#" class="button small-button" onclick="showEdit(3)">Modificar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Fernando</td>
+                <td>Martínez</td>
+                <td>37187733</td>
+                <td>25 Mar 1993</td>
+                <td>$750,000</td>
+                <td>
+                    <a href="#" class="button small-button" onclick="showDetails(4)">Detalles</a>
+                    <a href="#" class="button small-button" onclick="showEdit(4)">Modificar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Sofía</td>
+                <td>Gómez</td>
+                <td>42697868</td>
+                <td>23 Oct 2000</td>
+                <td>$890,300</td>
+                <td>
+                    <a href="#" class="button small-button" onclick="showDetails(5)">Detalles</a>
+                    <a href="#" class="button small-button" onclick="showEdit(5)">Modificar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Alan</td>
+                <td>Sanchez</td>
+                <td>31996932</td>
+                <td>10 Mar 1986</td>
+                <td>$2,690,000</td>
+                <td>
+                    <a href="#" class="button small-button" onclick="showDetails(6)">Detalles</a>
+                    <a href="#" class="button small-button" onclick="showEdit(6)">Modificar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Lionel</td>
+                <td>Sanchez</td>
+                <td>40520306</td>
+                <td>29 Ago 1999</td>
+                <td>$630,000</td>
+                <td>
+                    <a href="#" class="button small-button" onclick="showDetails(7)">Detalles</a>
+                    <a href="#" class="button small-button" onclick="showEdit(7)">Modificar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2>Detalles de la Cuenta</h2>
+            <div id="modalBody">
+                <!-- Aquí se mostrará la información de la cuenta -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h2>Acerca de Nosotros</h2>
+                <p>Somos un banco dedicado a brindar servicios financieros innovadores y seguros. Conectamos a nuestros
+                    clientes con soluciones bancarias fáciles y accesibles.</p>
+            </div>
+
+            <div class="footer-section links">
+                <h2>Enlaces Rápidos</h2>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Servicios</a></li>
+                    <li><a href="#">Soporte</a></li>
+                    <li><a href="#">Contactos</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section social">
+                <h2>Redes Sociales</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="img/facebook-logo-facebook-icon-transparent-free-png.webp"alt="Facebook"></a>
+                    <a href="#"><img src="img/new-twitter-x-logo-twitter-icon-x-social-media-icon-free-png.webp"alt="Twitter"></a>
+                    <a href="#"><img src="img/07f0d7b69ef071571e4ada2f4d6a053a-icono-de-instagram-colorido.webp"alt="Instagram"></a>
+                    <a href="#"><img src="img/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Banco | Todos los derechos reservados.</p>
+        </div>
+
+    </footer>
+
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+/* Estilo global para el fondo oscuro */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e1e1e;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del encabezado h1 */
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(90deg, #ffffff, #61a4f4, #2a9d8f, #264653);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    padding: 10px;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+    animation: glow 3s infinite alternate;
+}
+
+/* Animación de brillo */
+@keyframes glow {
+    0% {
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7),
+            0 0 10px #6b8cff,
+            0 0 20px #61a4f4,
+            0 0 30px #2a9d8f,
+            0 0 40px #264653;
+    }
+
+    100% {
+        text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7),
+            0 0 20px #6b8cff,
+            0 0 30px #61a4f4,
+            0 0 40px #2a9d8f,
+            0 0 50px #264653;
+    }
+}
+
+/* Sección de imágenes */
+section {
+    display: flex;
+    flex-direction: column; /* Mantiene el apilamiento vertical */
+    align-items: center;
+    gap: 20px; /* Espacio entre secciones */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    background-color: #2a2a2a;
+}
+
+/* Fila de imágenes */
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Espacio entre las imágenes */
+}
+
+/* Estilos de las imágenes */
+section img {
+    width: 500px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: width 0.5s ease, opacity 0.5s ease, transform 0.3s ease;
+    border-radius: 8px;
+}
+
+section img:hover {
+    cursor: pointer;
+    width: 550px;
+    opacity: 1;
+    transform: scale(1.05);
+    filter: brightness(1.1) contrast(120%);
+}
+
+section a {
+    text-decoration: none;
+}
+
+/* Estilos específicos para la sección del juego */
+.game-section {
+    margin-top: 4px; /* Separación de la sección de tablas */
+    padding: 20px;
+    background-color: #2a2a2a; /* Mantener el mismo fondo */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-section .row {
+    justify-content: center; /* Centrar la imagen del juego */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}

@@ -1,0 +1,271 @@
+/* Asegura que el html y el body ocupen la pantalla completa */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Diseño de la página */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #6d6c6cce;
+}
+
+/* Contenedor principal para todo el contenido, menos el footer */
+.container {
+    flex: 1; /* Este flex hace que .container ocupe el espacio disponible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor sea del ancho completo */
+}
+
+/* Encabezado de la página */
+.header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para la tabla */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para los encabezados de la tabla */
+th {
+    background-color: #555;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: normal;
+    border-bottom: 2px solid #ddd;
+}
+
+/* Estilos para las celdas de la tabla */
+td {
+    padding: 10px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+/* Estilos para filas impares */
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+/* Estilos para filas al pasar el mouse */
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Estilos para el espacio de filtro o separador */
+.filter {
+    height: 10px;
+    width: 100%;
+    background-color: #555;
+}
+
+/* Estilos para enlaces */
+a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+/* Estilos para la clase 'button' */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para botones pequeños */
+.small-button {
+    padding: 6px 12px;
+    font-size: 12px;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+    width: 90%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    /* Ajuste para pantallas pequeñas */
+}
+
+.search-bar input {
+    padding: 10px;
+    font-size: 1em;
+    width: 60%;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    min-width: 200px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #6d6c6cce;
+    color: rgb(0, 0, 0);
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: white;
+}
+
+/* Estilos del footer */
+.footer {
+    background-color: #333; 
+    color: #ddd; 
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    margin-top: auto;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    padding: 10px;
+    min-width: 220px;
+    box-sizing: border-box;
+    
+}
+
+.footer-section h2 {
+    margin-bottom: 15px;
+    color: #f2f2f2; 
+}
+
+.footer-section p {
+    margin: 10px 0;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #0056b3;
+}
+
+.about-text {
+    font-family: 'Georgia', serif;
+    font-size: 1em;
+    color: #ddd; 
+}
+
+.footer .social-icons {
+    margin-top: 10px;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.footer .social-icons img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #aaa;
+}
+
+.quick-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.quick-links li {
+    margin: 0 15px;
+}
+
+.quick-links li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s, text-shadow 0.3s;
+    font-weight: 500;
+}
+
+.quick-links li a:hover {
+    color: #0056b3;
+    text-shadow: 0 0 5px rgba(0, 86, 179, 0.8);
+}
+
